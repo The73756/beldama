@@ -1,1 +1,5 @@
-// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+@import 'mixins';
+
+@include font-face('IgraSans', '../fonts/IgraSans', 400, normal);
+@include font-face('OpenSans', '../fonts/OpenSans-Regular', 400, normal);
+@include font-face('OpenSans', '../fonts/OpenSans-Bold', 700, normal);

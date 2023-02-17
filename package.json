@@ -45,11 +45,12 @@
     "node-w3c-validator": "^2.0.1",
     "postcss": "^8.4.5",
     "postcss-scss": "^4.0.2",
+    "prettier": "^2.8.4",
     "sass": "^1.45.1",
     "stylelint": "^14.2.0",
+    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-order": "^5.0.0",
-    "prettier": "^2.8.4",
     "typograf": "^6.14.1",
     "webpack": "^5.65.0",
     "webpack-stream": "^7.0.0"
