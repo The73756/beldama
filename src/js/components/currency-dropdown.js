@@ -1,10 +1,10 @@
 let isClicked = false;
 const handleClick = (e) => {
-  const isDropdownButton = e.target.matches('[data-dropdown-button]');
+  const isDropdownButton = e.target.matches('.currency-dropdown__btn');
   let currentDropdown;
 
   if (isDropdownButton) {
-    currentDropdown = e.target.closest('[data-dropdown]');
+    currentDropdown = e.target.closest('.currency-dropdown');
 
     if (isClicked) {
       currentDropdown.classList.remove('currency-dropdown--active');
@@ -16,7 +16,7 @@ const handleClick = (e) => {
     isClicked = true;
   }
 
-  document.querySelectorAll('[data-dropdown].currency-dropdown--active').forEach((dropdown) => {
+  document.querySelectorAll('.currency-dropdown.currency-dropdown--active').forEach((dropdown) => {
     if (dropdown === currentDropdown) return;
     dropdown.classList.remove('currency-dropdown--active');
     isClicked = false;
@@ -24,17 +24,17 @@ const handleClick = (e) => {
 };
 
 const handleHover = (e) => {
-  const isDropdownButton = e.target.matches('[data-dropdown-button]');
-  if (!isDropdownButton && e.target.closest('[data-dropdown]')) return;
+  const isDropdownButton = e.target.matches('.currency-dropdown__btn');
+  if (!isDropdownButton && e.target.closest('.currency-dropdown')) return;
 
   let currentDropdown;
 
   if (isDropdownButton) {
-    currentDropdown = e.target.closest('[data-dropdown]');
+    currentDropdown = e.target.closest('.currency-dropdown');
     currentDropdown.classList.add('currency-dropdown--active');
   }
 
-  document.querySelectorAll('[data-dropdown].currency-dropdown--active').forEach((dropdown) => {
+  document.querySelectorAll('.currency-dropdown.currency-dropdown--active').forEach((dropdown) => {
     if (dropdown === currentDropdown || isClicked) return;
     dropdown.classList.remove('currency-dropdown--active');
     isClicked = false;
