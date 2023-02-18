@@ -49,20 +49,20 @@
   span {
     pointer-events: none;
   }
+}
 
-  &--active {
-    .currency-dropdown__icon {
-      fill: var(--accent-color);
-      transform: rotate(90deg);
-    }
+.currency-dropdown.dropdown-active {
+  .currency-dropdown__icon {
+    fill: var(--accent-color);
+    transform: rotate(90deg);
+  }
 
-    .currency-dropdown__list {
-      opacity: 1;
-      visibility: visible;
-    }
+  .currency-dropdown__list {
+    opacity: 1;
+    visibility: visible;
+  }
 
-    .currency-dropdown__btn:first-child {
-      border-radius: 12px 12px 0 0;
-    }
+  .currency-dropdown__btn:first-child {
+    border-radius: 12px 12px 0 0;
   }
 }
