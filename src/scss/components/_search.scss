@@ -17,10 +17,7 @@
   }
 
   &__input {
-    position: absolute;
-    right: 28px;
     display: block;
-    max-width: 12vw;
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     line-height: 23px;
@@ -57,7 +54,7 @@
 
   &--active {
     &::after {
-      width: 13.5vw;
+      width: 100%;
     }
 
     .search__input {
