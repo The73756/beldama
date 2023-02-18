@@ -5,8 +5,12 @@
 @import 'settings';
 
 // подключения компонентов страницы
+@import './components/line';
 @import './components/nav';
 @import './components/header';
 @import './components/currency';
 @import './components/search';
 @import './components/ticker';
+@import './components/product-section';
+@import './components/product-item';
+@import './components/timer';

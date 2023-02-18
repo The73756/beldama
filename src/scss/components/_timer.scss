@@ -1,0 +1,28 @@
+.timer {
+  position: absolute;
+  right: 10px;
+  z-index: 2;
+  width: max-content;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+    padding: 4px 7px;
+    text-transform: uppercase;
+    color: var(--promo-dark-color);
+    background-color: var(--promo-light-color);
+  }
+
+  &__time {
+    position: absolute;
+    left: 10px;
+    bottom: -22px;
+    padding: 4px 7px;
+    color: var(--promo-light-color);
+    background-color: var(--promo-dark-color);
+  }
+}

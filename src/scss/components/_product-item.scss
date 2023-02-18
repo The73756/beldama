@@ -1,0 +1,136 @@
+.product-item {
+  position: relative;
+  max-width: 267px;
+  background-color: #fff;
+  transition: box-shadow var(--transition);
+
+  &__image {
+    margin-bottom: 10px;
+
+    &-wrapper {
+      position: relative;
+    }
+  }
+
+  &__content {
+    padding: 0 25px 13px;
+  }
+
+  &__promo {
+    position: absolute;
+    left: 0;
+    bottom: 13px;
+    padding: 4px 7px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--accent-light-color);
+  }
+
+  &__name {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+  }
+
+  &__desc {
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: var(--text-color);
+    opacity: 0.5;
+  }
+
+  &__price-wrapper {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__price {
+    margin: 0 0 10px;
+    padding: 0;
+    font-size: 17px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+
+    &--old {
+      font-size: 13px;
+      opacity: 0.35;
+    }
+  }
+
+  &__currency {
+    text-transform: uppercase;
+  }
+
+  &__sizes {
+    position: absolute;
+    z-index: 5;
+    padding: 0 25px 13px;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0;
+    transition: opacity var(--transition), box-shadow var(--transition);
+
+    &-title {
+      margin: 0;
+      padding: 0;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      letter-spacing: 0.01em;
+      color: var(--text-color);
+      opacity: 0.5;
+    }
+  }
+
+  &__sizes-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  &__sizes-item {
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+    opacity: 0.5;
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    background-color: var(--accent-light-color);
+  }
+
+  &__icon {
+    fill: #fff;
+  }
+
+  &:hover {
+    box-shadow: 0 0 22px rgb(0 0 0 / 15%);
+
+    .product-item__sizes {
+      box-shadow: 0 12px 14px rgb(0 0 0 / 15%);
+      opacity: 1;
+    }
+  }
+}

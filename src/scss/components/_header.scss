@@ -32,7 +32,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 70px;
-    margin-bottom: 75px;
+    margin-bottom: 55px;
 
     &__phone {
       display: flex;
@@ -83,13 +83,13 @@
 }
 
 .main-nav {
-  margin-bottom: 15px;
   border-bottom: 2px solid #d9d9d9;
-  padding-bottom: 20px;
+  padding: 20px 0;
+  background-color: #fcfcfc;
 }
 
 .product-nav {
-  margin-bottom: 15px;
+  padding: 15px 0;
 
   &__list {
     gap: 35px;
