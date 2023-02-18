@@ -39,7 +39,7 @@
   }
 
   &__btn {
-    &:hover {
+    @include hover {
       .search__icon {
         fill: var(--accent-color);
       }

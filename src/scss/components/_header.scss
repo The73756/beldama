@@ -31,7 +31,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 68px 0;
+    margin-top: 70px;
+    margin-bottom: 75px;
 
     &__phone {
       display: flex;
@@ -42,7 +43,7 @@
       transition: color var(--transition);
       gap: 10px;
 
-      &:hover {
+      @include hover {
         color: var(--accent-color);
       }
     }
@@ -75,8 +76,22 @@
   &__icon {
     transition: fill var(--transition);
 
-    &:hover {
+    @include hover {
       fill: var(--accent-color);
     }
+  }
+}
+
+.main-nav {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #d9d9d9;
+  padding-bottom: 20px;
+}
+
+.product-nav {
+  margin-bottom: 15px;
+
+  &__list {
+    gap: 35px;
   }
 }

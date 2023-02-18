@@ -15,7 +15,7 @@
           <button class="btn-reset currency__btn">
             <img src="../img/flags/usa.png" alt="" aria-hidden="true" width="27" height="18" class="currency__image" />
             <span>usd</span>
-            <svg class="currency__icon">
+            <svg class="currency__icon" width="12" height="12">
               <use xlink:href="img/sprite.svg#arrow"></use>
             </svg>
           </button>
@@ -55,7 +55,7 @@
           </button>
         </form>
 
-        <nav class="user-nav" title="Пользовательская навигация">
+        <nav class="user-nav" aria-label="Пользовательская навигация">
           <ul class="user-nav__list list-reset">
             <li class="user-nav__item">
               <a href="#" class="user-nav__link" title="Избранные">
@@ -76,6 +76,54 @@
       </div>
     </div>
 
-    <div class="header-bottom"></div>
+    <div class="header-bottom">
+      <nav class="nav product-nav main-nav" aria-label="Основная навигация">
+        <ul class="nav__list product-nav__list list-reset">
+          <li class="nav__item">
+            <a href="/" class="nav__link nav__link--active">Главная</a>
+          </li>
+          <li class="nav__item main-nav__btn">
+            <button class="btn-reset">
+              <span>Каталог</span>
+              <svg class="main-nav__icon" width="12" height="12">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Оплата</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Доставка и возврат</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Отзыв</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="nav" aria-label="Навигация по типам товаров">
+        <ul class="nav__list list-reset">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Новинки</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Платья</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Жакеты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Блузки</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Бренды</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
