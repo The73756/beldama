@@ -5,7 +5,8 @@
 @import 'settings';
 
 // подключения компонентов страницы
+@import './components/nav';
 @import './components/header';
 @import './components/currency';
 @import './components/search';
-@import './components/nav';
+@import './components/ticker';
