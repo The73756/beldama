@@ -11,14 +11,58 @@
       </div>
 
       <div class="header-top__left">
-        <div class="currency">
-          <button class="btn-reset currency__btn">
-            <img src="../img/flags/usa.png" alt="" aria-hidden="true" width="27" height="18" class="currency__image" />
+        <div class="currency-dropdown" data-dropdown>
+          <button class="currency-dropdown__btn btn-reset" data-name="USA" data-dropdown-button>
+            <img
+              src="../img/flags/usa.png"
+              alt=""
+              aria-hidden="true"
+              width="27"
+              height="18"
+              class="currency-dropdown__image" />
             <span>usd</span>
-            <svg class="currency__icon" width="12" height="12">
+            <svg class="currency-dropdown__icon" width="12" height="12">
               <use xlink:href="img/sprite.svg#arrow"></use>
             </svg>
           </button>
+          <ul class="currency-dropdown__list list-reset">
+            <li class="currency-dropdown__item">
+              <button class="currency-dropdown__btn btn-reset" data-name="BYN">
+                <img
+                  src="../img/flags/bel.png"
+                  alt=""
+                  aria-hidden="true"
+                  width="27"
+                  height="18"
+                  class="currency-dropdown__image" />
+                <span>byn</span>
+              </button>
+            </li>
+            <li class="currency-dropdown__item">
+              <button class="currency-dropdown__btn btn-reset" data-name="RUS">
+                <img
+                  src="../img/flags/rus.png"
+                  alt=""
+                  aria-hidden="true"
+                  width="27"
+                  height="18"
+                  class="currency-dropdown__image" />
+                <span>rub</span>
+              </button>
+            </li>
+            <li class="currency-dropdown__item">
+              <button class="currency-dropdown__btn btn-reset" data-name="EUR">
+                <img
+                  src="../img/flags/es.png"
+                  alt=""
+                  aria-hidden="true"
+                  width="27"
+                  height="18"
+                  class="currency-dropdown__image" />
+                <span>eur</span>
+              </button>
+            </li>
+          </ul>
         </div>
         <a href="#" class="header-top__link">
           <svg class="header-top__icon" width="24" height="22">
