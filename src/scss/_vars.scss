@@ -1,11 +1,19 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
+  --font-family: 'Igra Sans', sans-serif;
   --content-width: 1170px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --transition: 0.2s ease-in-out;
 
   // colors
   --light-color: #fff;
+  --accent-color: #fe4141;
+
+  // text colors
+  --text-color: #000;
+  --text-accent-color: #808080;
+  --text-light-color: #fff;
+  --text-gray-color: #4a4a4a;
 }
