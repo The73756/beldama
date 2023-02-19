@@ -125,12 +125,24 @@
     fill: #fff;
   }
 
-  &:hover {
+  @include hover {
     box-shadow: 0 0 22px rgb(0 0 0 / 15%);
 
     .product-item__sizes {
       box-shadow: 0 12px 14px rgb(0 0 0 / 15%);
       opacity: 1;
     }
+  }
+}
+
+.page--ios {
+  .product-item__sizes {
+    opacity: 1;
+  }
+}
+
+.page--android {
+  .product-item__sizes {
+    opacity: 1;
   }
 }

@@ -33,12 +33,14 @@
         column-gap: 5px;
         flex-flow: row-reverse wrap;
         justify-content: center;
+        width: max-content;
         row-gap: 0;
       }
     }
 
     @include small-tablet {
       flex-direction: column;
+      row-gap: 5px;
     }
   }
 

@@ -53,6 +53,10 @@
         text-align: center;
       }
     }
+
+    @include mobile {
+      width: 70%;
+    }
   }
 
   &__btn {
@@ -90,6 +94,12 @@
         z-index: 10;
         opacity: 1;
         pointer-events: auto;
+      }
+    }
+
+    @include mobile {
+      &::after {
+        width: 75%;
       }
     }
   }

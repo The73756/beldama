@@ -25,7 +25,7 @@
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
 
-    @include small-mobile {
+    @media (max-width: 350px) {
       justify-items: start;
     }
   }

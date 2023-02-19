@@ -29,3 +29,15 @@
     padding: 35px 0;
   }
 }
+
+.page--ios {
+  .product-section__items {
+    row-gap: 75px;
+  }
+}
+
+.page--android {
+  .product-section__items {
+    row-gap: 75px;
+  }
+}
