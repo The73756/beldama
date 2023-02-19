@@ -10,5 +10,22 @@
     width: 50px;
     height: 2px;
     background-color: currentcolor;
+
+    @include tablet {
+      left: 50%;
+      width: 70px;
+      transform: translateX(-50%);
+    }
+  }
+
+  &--footer {
+    &::after {
+      left: 0;
+      width: 50px;
+
+      @include tablet {
+        left: 8%;
+      }
+    }
   }
 }

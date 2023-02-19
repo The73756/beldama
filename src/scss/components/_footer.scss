@@ -17,15 +17,28 @@
     display: grid;
     column-gap: 20px;
     justify-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     margin-bottom: 50px;
     row-gap: 30px;
+
+    @include tablet {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    @include small-mobile {
+      justify-items: start;
+    }
   }
 
   &__col {
     width: 100%;
-    max-width: 320px;
+    height: fit-content;
+    max-width: 360px;
     text-align: left;
+
+    @include small-mobile {
+      max-width: 290px;
+    }
   }
 
   &__title {
@@ -50,6 +63,10 @@
     color: var(--footer-text-color);
     opacity: 0.8;
     gap: 5px;
+
+    @include small-mobile {
+      text-align: center;
+    }
   }
 
   &__author {
@@ -88,6 +105,10 @@
     --footer-button-text: #fff;
     --footer-border-color: #fff;
     --footer-bg: #161616;
+  }
+
+  @include tablet {
+    padding-top: 35px;
   }
 }
 
@@ -145,6 +166,11 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @include small-mobile {
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 
   &__link {

@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     searchForm.classList.toggle('search--active');
     searchBtn.type = isActive ? 'submit' : 'button';
+    searchInput.tabIndex = isActive ? -1 : 0;
+    searchInput.focus();
   };
 
   searchBtn.addEventListener('click', toggleButtonState);
-  searchInput.addEventListener('focus', toggleButtonState);
-  searchInput.addEventListener('blur', toggleButtonState);
 
   document.addEventListener('click', (e) => {
     const isActive = searchForm.classList.contains('search--active');
