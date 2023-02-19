@@ -5,14 +5,27 @@
     display: flex;
     align-items: center;
     padding: 10px 9px;
+    width: 100%;
     font-style: normal;
     font-size: 17px;
     line-height: 17px;
     text-transform: uppercase;
     color: var(--text-color);
+    transition: color var(--transition), background-color var(--transition);
     gap: 12px;
 
-    &:first-child {
+    &:last-child {
+      border-radius: inherit;
+    }
+
+    &:not(&--open) {
+      @include hover {
+        color: var(--accent-color);
+        background-color: #fff3f3;
+      }
+    }
+
+    &--open {
       border-radius: 12px;
     }
   }
@@ -62,7 +75,7 @@
     visibility: visible;
   }
 
-  .currency-dropdown__btn:first-child {
+  .currency-dropdown__btn--open {
     border-radius: 12px 12px 0 0;
   }
 }
