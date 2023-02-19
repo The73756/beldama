@@ -146,20 +146,23 @@
           </li>
           <li class="main-nav__item nav__item main-nav__btn">
             <div class="catalog-dropdown" data-dropdown>
-              <button class="btn-reset catalog-dropdown__btn" data-dropdown-button>
+              <button
+                class="btn-reset catalog-dropdown__btn"
+                aria-label="Открыть выпадающий каталог"
+                data-dropdown-button>
                 <span>Каталог</span>
                 <svg class="catalog-dropdown__icon" width="12" height="12">
                   <use xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
               </button>
               <div class="catalog-dropdown__list list-reset catalog-submenu">
+                <div class="catalog-dropdown__overlay"></div>
                 <button class="btn-reset catalog-dropdown__btn catalog-dropdown__btn--back" data-dropdown-button>
                   <span>Назад</span>
                   <svg class="catalog-dropdown__icon" width="12" height="12">
                     <use xlink:href="img/sprite.svg#arrow"></use>
                   </svg>
                 </button>
-
                 <ul class="catalog-submenu__list catalog-submenu__list--main list-reset">
                   <li class="catalog-dropdown__item catalog-dropdown__item--main">
                     <h3 class="catalog-submenu__title line">Категории:</h3>
