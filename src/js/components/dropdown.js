@@ -19,8 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentDropdown;
 
     if (dropdownBtn) {
-      const path = dropdownBtn.getAttribute('data-dropdown-button');
-      currentDropdown = document.querySelector(`[data-dropdown="${path}"]`);
+      currentDropdown = e.target.closest(`[data-dropdown]`);
       const isClicked = currentDropdown.getAttribute('data-clicked');
 
       if (isHovered(dropdownBtn) && isClicked) {
@@ -56,8 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentDropdown;
 
     if (dropdownBtn) {
-      const path = dropdownBtn.getAttribute('data-dropdown-button');
-      currentDropdown = document.querySelector(`[data-dropdown="${path}"]`);
+      currentDropdown = e.target.closest(`[data-dropdown]`);
       currentDropdown.classList.add('dropdown-active');
     }
 

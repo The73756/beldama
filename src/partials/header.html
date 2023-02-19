@@ -11,12 +11,12 @@
       </div>
 
       <div class="header-top__left">
-        <div class="currency-dropdown" data-dropdown="currency">
+        <div class="currency-dropdown dropdown-active" data-dropdown>
           <button
             class="currency-dropdown__btn btn-reset"
             aria-label="Открыть выпадающее меню выбора валюты"
             data-name="USA"
-            data-dropdown-button="currency">
+            data-dropdown-button>
             <img
               src="../img/flags/usa.png"
               alt=""
@@ -135,12 +135,118 @@
             <a href="/" class="nav__link nav__link--active">Главная</a>
           </li>
           <li class="nav__item main-nav__btn">
-            <button class="btn-reset">
-              <span>Каталог</span>
-              <svg class="main-nav__icon" width="12" height="12">
-                <use xlink:href="img/sprite.svg#arrow"></use>
-              </svg>
-            </button>
+            <div class="catalog-dropdown" data-dropdown>
+              <button class="btn-reset catalog-dropdown__btn" data-dropdown-button>
+                <span>Каталог</span>
+                <svg class="catalog-dropdown__icon" width="12" height="12">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </button>
+              <div class="catalog-dropdown__list list-reset catalog-submenu">
+                <ul class="catalog-submenu__list catalog-submenu__list--main list-reset">
+                  <li class="catalog-dropdown__item catalog-dropdown__item--main">
+                    <h3 class="catalog-submenu__title line">Категории:</h3>
+                    <ul class="catalog-submenu__list list-reset">
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">Костюм брючный</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">Комплект</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">Сарафан</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">Платье</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">Юбка</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">Комбинезон</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">Кардиган/джемпер</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">Куртка</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">Пальто</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">Туника</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">Плащ</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">Блуза</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">Жакет/жилет</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">Брюки</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="catalog-dropdown__item catalog-dropdown__item--main">
+                    <h3 class="catalog-submenu__title line">Популярные бренды:</h3>
+                    <ul class="catalog-submenu__list list-reset">
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">AGATTI</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">BEAUTY ANNETE</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">BEAUTIFUL-FREE</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">DIAMANT</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">DOGGI</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">ELITEMODA</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">BEAUTY ANNETE</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">AGATTI</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">DIAMANT</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">ELITEMODA</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">BEAUTIFUL-FREE</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">DIAMANT</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">DOGGI</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">BEAUTY ANNETE</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link">AGATTI</a>
+                      </li>
+                      <li class="catalog-submenu__item">
+                        <a href="#" class="catalog-submenu__link catalog-submenu__link--rest">Смотреть все бренды</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li class="nav__item">
             <a href="#" class="nav__link">Оплата</a>
