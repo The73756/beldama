@@ -4,5 +4,6 @@
   "trailingComma": "all",
   "semi": true,
   "bracketSameLine": true,
+  "html.format.wrapAttributes": "force-aligned",
   "printWidth": 120
 }
