@@ -14,6 +14,10 @@
   }
 
   &__btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
     span {
       pointer-events: none;
     }
@@ -72,7 +76,11 @@
     transition: color var(--transition);
 
     &:hover {
-      color: #ed4b4c;
+      color: var(--accent-light-color);
+    }
+
+    &--active {
+      color: var(--accent-light-color);
     }
   }
 }
