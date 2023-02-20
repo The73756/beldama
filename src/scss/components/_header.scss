@@ -8,24 +8,24 @@
     width: 100%;
 
     &__link {
-      display: flex;
-      align-items: center;
+      padding-left: 12px;
       font-size: 17px;
-      line-height: 0;
+      line-height: 17px;
       letter-spacing: 0.02em;
       color: #1c1c1c;
 
       @include mobile {
         font-size: 15px;
       }
+
+      @include mobile {
+        padding-left: 8px;
+      }
     }
 
-    &__icon {
-      margin-right: 12px;
-
-      @include small-tablet {
-        margin-right: 8px;
-      }
+    &__wrapper {
+      display: flex;
+      align-items: center;
     }
 
     &__left {
@@ -36,6 +36,7 @@
       @include small-tablet {
         column-gap: 5px;
         flex-flow: row-reverse wrap;
+        align-items: center;
         justify-content: center;
         width: max-content;
         row-gap: 0;
@@ -56,17 +57,28 @@
     margin-bottom: 55px;
 
     &__phone {
-      display: flex;
-      align-items: center;
+      display: inline-block;
       font-size: 16px;
       line-height: 143.6%;
       color: var(--text-color);
       transition: color var(--transition);
-      gap: 10px;
+
+      .header-main__icon {
+        margin-bottom: 1px;
+      }
 
       @include hover {
         color: var(--accent-color);
       }
+    }
+
+    &__icon {
+      display: inline-block;
+      vertical-align: text-bottom;
+    }
+
+    &__number {
+      padding: 5px;
     }
 
     &__operator {
@@ -93,7 +105,7 @@
   &-bottom {
     @include tablet {
       position: fixed;
-      left: 0;
+      right: 0;
       top: 0;
       z-index: 999;
       display: flex;
@@ -105,7 +117,7 @@
       min-height: 100%;
       max-width: 70vw;
       background-color: #fff;
-      transform: translateX(-120vw);
+      transform: translateX(120vw);
       transition: transform 0.4s ease-in-out;
     }
   }
@@ -161,7 +173,6 @@
 
 .main-nav {
   position: relative;
-  border-bottom: 2px solid #d9d9d9;
   padding: 20px 0;
   background-color: #fcfcfc;
 
