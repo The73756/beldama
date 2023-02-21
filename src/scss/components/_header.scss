@@ -99,12 +99,6 @@
       }
     }
 
-    &__burger {
-      @include mobile {
-        order: 2;
-      }
-    }
-
     @include mobile {
       flex-direction: column;
       align-items: center;
