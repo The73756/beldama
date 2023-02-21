@@ -47,7 +47,7 @@
     }
 
     @include mobile {
-      flex-direction: column;
+      flex-direction: column-reverse;
       align-items: center;
       justify-content: center;
     }
