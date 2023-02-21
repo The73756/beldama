@@ -73,6 +73,10 @@
     vertical-align: middle;
     border-radius: 3px;
     pointer-events: none;
+
+    @include mobile {
+      margin-bottom: 1px;
+    }
   }
 
   &__text {
