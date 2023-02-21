@@ -1,6 +1,6 @@
 .timer {
   position: absolute;
-  right: 10px;
+  left: -2%;
   z-index: 2;
   width: max-content;
   font-family: 'Open Sans', sans-serif;
@@ -19,8 +19,8 @@
 
   &__time {
     position: absolute;
-    left: 10px;
-    bottom: -22px;
+    left: 2%;
+    top: 75%;
     padding: 4px 7px;
     color: var(--promo-light-color);
     background-color: var(--promo-dark-color);

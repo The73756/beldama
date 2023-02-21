@@ -15,11 +15,10 @@
       color: #1c1c1c;
 
       @include mobile {
-        font-size: 15px;
-      }
-
-      @include mobile {
         padding-left: 8px;
+        width: min-content;
+        font-size: 15px;
+        text-align: center;
       }
     }
 
@@ -35,17 +34,15 @@
 
       @include small-tablet {
         column-gap: 5px;
-        flex-flow: row-reverse wrap;
-        align-items: center;
-        justify-content: center;
+        flex-direction: column-reverse;
+        align-items: flex-end;
         width: max-content;
         row-gap: 0;
       }
     }
 
     @include small-tablet {
-      flex-direction: column;
-      row-gap: 5px;
+      align-items: start;
     }
   }
 
@@ -70,6 +67,10 @@
       @include hover {
         color: var(--accent-color);
       }
+
+      @include mobile {
+        order: 2;
+      }
     }
 
     &__icon {
@@ -91,19 +92,33 @@
       display: flex;
       align-items: center;
       gap: 22px;
+
+      @include mobile {
+        display: flex;
+        order: 2;
+      }
+    }
+
+    &__burger {
+      @include mobile {
+        order: 2;
+      }
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      margin: 35px 0;
+      row-gap: 15px;
     }
 
     @include tablet {
       position: relative;
-      flex-direction: column;
-      align-items: center;
-      margin: 35px 0;
-      row-gap: 10px;
     }
   }
 
   &-bottom {
-    @include tablet {
+    @include mobile {
       position: fixed;
       right: 0;
       top: 0;
@@ -112,7 +127,7 @@
       flex-direction: column;
       overflow-x: hidden;
       overflow-y: auto;
-      padding: 30px 10px 20px;
+      padding: 20px 10px;
       width: 80%;
       min-height: 100%;
       max-width: 70vw;
@@ -142,16 +157,26 @@
     visibility: visible;
   }
 
-  @include tablet {
+  @include mobile {
     display: block;
   }
 }
 
 .logo {
-  margin-left: 100px;
+  margin-left: 10vw;
 
   @include tablet {
+    margin-right: 10vw;
     margin-left: 0;
+    width: 120px;
+  }
+
+  @include mobile {
+    display: flex;
+    order: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: 190px;
   }
 }
 
@@ -177,17 +202,26 @@
   background-color: #fcfcfc;
 
   &__item {
-    @include tablet {
-      font-size: 22px;
-    }
-
     @include mobile {
       font-size: 18px;
     }
   }
 
-  @include tablet {
+  &__container {
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__close {
+    margin-bottom: 10px;
+    margin-left: auto;
+  }
+
+  @include mobile {
     padding: 0 0 20px;
+    background-color: #fff;
 
     &__list {
       display: flex;
@@ -205,7 +239,7 @@
   &__list {
     gap: 35px;
 
-    @include tablet {
+    @include mobile {
       flex-wrap: wrap;
       margin: 0 auto;
       max-width: 450px;
@@ -218,7 +252,7 @@
 
   display: none;
 
-  @include tablet {
-    display: block;
+  @include mobile {
+    display: inline-block;
   }
 }

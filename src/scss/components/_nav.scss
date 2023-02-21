@@ -4,6 +4,14 @@
     align-items: center;
     justify-content: center;
     gap: 40px;
+
+    @include middle-tablet {
+      gap: 20px;
+    }
+
+    @include middle-tablet {
+      flex-wrap: wrap;
+    }
   }
 
   &__link {
@@ -22,8 +30,8 @@
       color: var(--accent-color);
     }
 
-    @include tablet {
-      font-size: 22px;
+    @include middle-tablet {
+      font-size: 16px;
     }
 
     @include mobile {

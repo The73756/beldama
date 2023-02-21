@@ -82,22 +82,20 @@
     <div class="header-main">
       <h1 class="visually-hidden">Beldama - Интернет-магазин одежды</h1>
 
-      <div class="header-main__wrapper">
-        <a class="header-main__phone" href="tel:+375298444909">
-          <svg class="header-main__icon" width="17" height="17">
-            <use xlink:href="img/sprite.svg#phone"></use>
-          </svg>
-          <span class="header-main__number">+375 29 8 444 909</span>
-          <span class="header-main__operator">мтс</span>
-        </a>
-      </div>
+      <a class="header-main__phone" href="tel:+375298444909">
+        <svg class="header-main__icon" width="17" height="17">
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+        <span class="header-main__number">+375 29 8 444 909</span>
+        <span class="header-main__operator">мтс</span>
+      </a>
 
       <a href="/">
         <img class="logo" src="../img/logo.svg" alt="Логотип магазина Beldama" width="190" height="145" />
       </a>
 
       <div class="header-main__right">
-        <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger="main">
+        <button class="burger header-main__burger" aria-label="Открыть меню" aria-expanded="false" data-burger="main">
           <span class="burger__line"></span>
         </button>
 
@@ -134,7 +132,14 @@
   </div>
   <div class="header-bottom menu" data-menu="main">
     <nav class="nav main-nav" aria-label="Основная навигация">
-      <div class="container">
+      <div class="container main-nav__container">
+        <button
+          class="burger main-nav__close burger--close"
+          aria-label="Закрыть меню "
+          aria-expanded="true"
+          data-menu-close>
+          <span class="burger__line"></span>
+        </button>
         <ul class="main-nav__list nav__list list-reset">
           <li class="main-nav__item nav__item">
             <a href="/" class="main-nav__link nav__link nav__link--active">Главная</a>

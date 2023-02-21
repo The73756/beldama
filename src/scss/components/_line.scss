@@ -11,7 +11,7 @@
     height: 2px;
     background-color: currentcolor;
 
-    @include tablet {
+    @include mobile {
       left: 50%;
       width: 70px;
       transform: translateX(-50%);

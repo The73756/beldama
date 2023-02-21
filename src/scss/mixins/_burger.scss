@@ -47,22 +47,19 @@
     transition: transform 0.3s ease-in-out;
   }
 
-  &--active {
+  &--close {
     &::before {
       transform: scale(0);
-      transition: transform 0.3s ease-in-out;
     }
 
     &::after {
       top: 50%;
       transform: rotate(-45deg);
-      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
     }
 
     .burger__line {
       top: 50%;
       transform: rotate(45deg);
-      transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
     }
   }
 }

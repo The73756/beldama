@@ -13,10 +13,10 @@
     transition: opacity var(--transition), visibility var(--transition), transform 0.4s ease-in-out;
 
     @include big-desktop {
-      padding: 50px 15px;
+      padding: 20px 15px;
     }
 
-    @include tablet {
+    @include mobile {
       position: fixed;
       right: 0;
       top: 0;
@@ -48,30 +48,52 @@
       pointer-events: none;
     }
 
-    @include tablet {
-      margin-left: 8px;
-      font-size: 22px;
+    @include middle-tablet {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 16px;
+    }
+
+    @include middle-tablet {
+      font-size: 16px;
+      line-height: 16px;
     }
 
     @include mobile {
+      margin-left: 8px;
       font-size: 18px;
+      line-height: 18px;
     }
   }
 
   &__btn--back {
     display: none;
 
-    @include tablet {
+    @include mobile {
       display: block;
       margin-right: auto;
       margin-bottom: 20px;
       font-size: 20px;
+
+      span {
+        color: var(--text-color);
+      }
+
+      .catalog-dropdown__icon {
+        fill: var(--text-color);
+      }
     }
   }
 
   &__icon {
     transition: transform var(--transition), fill var(--transition);
     pointer-events: none;
+
+    @include middle-tablet {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 1px;
+    }
   }
 
   &__overlay {
@@ -117,8 +139,10 @@
     letter-spacing: 0.01em;
     color: var(--text-color);
 
-    @include tablet {
-      margin: 0 0 30px;
+    @include middle-tablet {
+      font-size: 20px;
+      line-height: 20px;
+      row-gap: 10px;
     }
   }
 
@@ -134,6 +158,11 @@
       justify-content: space-between;
       margin: 0 auto;
       max-width: var(--content-width);
+
+      @include small-tablet {
+        flex-direction: row;
+        justify-content: center;
+      }
     }
 
     @include big-desktop {
@@ -141,17 +170,17 @@
       row-gap: 10px;
     }
 
-    @include tablet {
+    @include small-tablet {
       max-height: none;
-      row-gap: 10px;
+    }
 
-      &--main {
-        @include tablet {
-          column-gap: 0;
-          width: 100%;
-          row-gap: 30px;
-        }
-      }
+    @include middle-tablet {
+      column-gap: 3px;
+      row-gap: 10px;
+    }
+
+    @include small-tablet {
+      column-gap: 40px;
     }
   }
 
@@ -165,6 +194,11 @@
 
     &--active {
       color: var(--accent-light-color);
+    }
+
+    @include middle-tablet {
+      font-size: 16px;
+      line-height: 16px;
     }
 
     @include hover {

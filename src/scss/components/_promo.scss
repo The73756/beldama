@@ -1,0 +1,24 @@
+.promo {
+  position: absolute;
+  left: 0;
+  bottom: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  &__item {
+    display: block;
+    padding: 4px 7px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--accent-light-color);
+
+    &--second {
+      background-color: #f00;
+    }
+  }
+}
