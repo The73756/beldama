@@ -280,7 +280,7 @@
     transition: color var(--transition), background-color var(--transition);
 
     @include hover {
-      color: var(----footer-button-bg);
+      color: var(--footer-button-bg);
       background-color: var(--footer-button-text);
     }
   }
