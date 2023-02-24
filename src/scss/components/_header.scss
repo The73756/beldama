@@ -8,24 +8,21 @@
     width: 100%;
 
     &__link {
-      padding-left: 12px;
+      display: flex;
+      align-items: center;
       font-size: 17px;
       line-height: 1;
       letter-spacing: 0.02em;
       color: #1c1c1c;
+      gap: 12px;
 
       @include small-tablet {
         font-size: 16px;
       }
 
       @include mobile {
-        padding-left: 8px;
+        gap: 8px;
       }
-    }
-
-    &__wrapper {
-      display: flex;
-      align-items: center;
     }
 
     &__left {
